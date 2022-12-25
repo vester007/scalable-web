@@ -5,6 +5,9 @@
     --primary-color: #2584ff;
     --Secondary-color:#00d9ff;
 }
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 /*typography*/
 
 html{
@@ -72,11 +75,11 @@ a{
 
 .badge{ 
     border-radius: 20px;
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
     padding: 0.5rem 2rem;
     white-space: nowrap;
-    color: #fff
 
 }
 
@@ -104,10 +107,10 @@ a{
 /*List*/
 
 .list{
-    list-style: none;
-    text-decoration: none;
-    padding-left: 0%;
     color: var(--colour-headings);
+    list-style: none;
+    padding-left: 0%;
+    text-decoration: none;
 }
 .list--inline .list__item{
     display: inline-block;
@@ -131,8 +134,8 @@ a{
 /*ICONS*/
 
 .icon{
-    width: 40px;
     height: 40px;
+    width: 40px;
 }
 
 .icon--primary{
@@ -140,11 +143,66 @@ a{
 }
 
 .icon-container{
+    align-items: center;
     background-color: #f3f9fa;
-    width: 64px;
-    height: 64px;
     border-radius: 100px;
     display: inline-flex;
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
+}
+
+/*Buttons*/
+
+.btn{
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform:uppercase;
+    white-space: nowrap;
+}
+.btn--primary{
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn--primary:hover{
+    filter: brightness(0.90);
+}
+.btn--secondary{
+    background-color: var(--Secondary-color);
+    color: white;
+}
+.btn--secondary:hover{
+    filter: brightness(0.90);
+}
+.btn--accent{
+    background-color: var(--accent-color);
+    color: white;
+}
+.btn--accent:hover{
+    filter: brightness(0.90);
+}
+.btn--outline{
+    background: #fff;
+    border: 2px solid var(--colour-headings);
+    color: var(--colour-headings);
+}
+.btn--outline:hover{
+    background: var(--colour-headings);
+    color: white;
+}
+.btn--block{
+    display: inline-block;
+    width: 100%;
+    
+}
+@media screen and(min-width:1024px) {
+    .btn{
+        font-size: 1.5px;
+    }
 }
