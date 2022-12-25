@@ -1,9 +1,9 @@
 :root{
-    --primary-color: blue;
-    --Secondary-color:lightblue;
-    --accent-color: orange;
-    --colour-headings:blue;
-    ---color-body: purple;
+    --color-body: #918ca4;
+    --accent-color: #ff3400;
+    --colour-headings:#1b0760;
+    --primary-color: #2584ff;
+    --Secondary-color:#00d9ff;
 }
 /*typography*/
 
@@ -11,10 +11,10 @@ html{
     font-size: 62.5%;
 }
 body{
+    color: var(--color-body);
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
-    color: var(---color-body);
 }
 h1, h2, h3{
     color:var(--colour-headings);
@@ -50,9 +50,9 @@ a{
 }
 .link-arrow{
     color: var(--accent-color);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .link-arrow::after{
     content: '-->';
@@ -66,5 +66,36 @@ a{
 @media screen and (min-width:1024px) {
     .link-arrow{
         font-size: 1.5rem;
+    }
+}
+/*Badges*/
+
+.badge{ 
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    color: #fff
+
+}
+
+.badge--primary{
+    background-color: var(--primary-color);
+}
+
+.badge--secondary{
+    background: var(--Secondary-color);
+}
+.badge--small{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px){
+    .badge{
+        font-size: 1.5rem;
+    }   
+    .badge--small{
+        font-size: 1.2rem;
     }
 }
