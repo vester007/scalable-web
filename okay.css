@@ -5,6 +5,8 @@
     --colour-headings:blue;
     ---color-body: purple;
 }
+/*typography*/
+
 html{
     font-size: 62.5%;
 }
@@ -39,5 +41,30 @@ p{
     }
     h3{
         font-size:2.4rem;
+    }
+}
+/*Links*/
+
+a{
+    text-decoration: none;
+}
+.link-arrow{
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-arrow::after{
+    content: '-->';
+    margin-left: 2px;
+    transition: margin-left 0.4s;
+    
+}
+.link-arrow:hover::after{
+    margin-left: 15px;
+}
+@media screen and (min-width:1024px) {
+    .link-arrow{
+        font-size: 1.5rem;
     }
 }
