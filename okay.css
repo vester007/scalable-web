@@ -250,7 +250,7 @@ a {
   }
 }
 
-/*Cards*/
+/*CARDS*/
 
 .card {
   border-radius: 10px;
@@ -378,5 +378,17 @@ a {
   }
   .quote__company {
     font-size: 1.6rem;
+  }
+}
+
+/*GRIDS*/
+.grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
