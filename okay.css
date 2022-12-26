@@ -392,3 +392,37 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/*Testimonials*/
+
+.testimonial {
+  overflow: visible;
+  padding: 3rem;
+}
+
+.testimonial__image__container {
+  position: relative;
+}
+
+.testimonial__image__container .testimonial__image {
+  width: 100%;
+}
+.testimonial__quotes {
+  position: absolute;
+  right: -36px;
+  top: 40px;
+  transform: rotate(183deg);
+  width: 7rem;
+}
+
+@media screen and(min-width:768px) {
+  .testimonial .quote {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+}
