@@ -1,11 +1,12 @@
 :root {
-  --color-body: #918ca4;
   --accent-color: #ff3400;
+  --border-radius: 30px;
+  --color-body-darker: #5c5577;
+  --color-body: #918ca4;
+  --color-border: #ccc;
   --colour-headings: #1b0760;
   --primary-color: #2584ff;
   --Secondary-color: #00d9ff;
-  --color-border: #ccc;
-  --border-radius: 30px;
 }
 *,
 *::after,
@@ -330,4 +331,52 @@ a {
 }
 .media__image {
   margin-top: 1.1rem;
+}
+
+/*QUOTES*/
+.quote {
+  color: var(--color-body-darker);
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-family: "Alex Brush", cursive;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.quote__company {
+  font-size: 2rem;
+  font-style: normal;
+  opacity: 0.4;
+  text-transform: capitalize;
+}
+
+.lining--icon {
+  bottom: 1rem;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 3rem;
+  }
+  .quote__company {
+    font-size: 1.6rem;
+  }
 }
