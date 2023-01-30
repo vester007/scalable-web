@@ -31,6 +31,7 @@ h2,
 h3 {
   color: var(--colour-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -543,12 +544,12 @@ a {
 
 /*NAVIGATION*/
 .nav {
+  align-items: center;
   background: black;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 1rem;
-  align-items: center;
 }
 
 .nav a {
@@ -565,8 +566,8 @@ svg {
 }
 
 .nav__item {
-  padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
+  padding: 0.5rem 2rem;
 }
 
 .nav__item > a {
@@ -579,15 +580,15 @@ svg {
 }
 
 .nav__toggler {
+  cursor: pointer;
   opacity: 0.5;
   transition: box-shadow 0.15s;
-  cursor: pointer;
 }
 
 .nav.collapsible--expanded .nav__toggler {
-  opacity: 1;
-  box-shadow: 0 0 0 3px #666;
   border-radius: 7px;
+  box-shadow: 0 0 0 3px #666;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -596,14 +597,41 @@ svg {
   }
 
   .nav__list {
-    width: auto;
     display: flex;
     font-size: 1.6rem;
     max-height: 100%;
     opacity: 1;
+    width: auto;
   }
 
   .nav__item {
     border: none;
+  }
+}
+
+/*HERO*/
+
+.hero {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem 0;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    align-self: center;
+    text-align: left;
+  }
+  .hero {
+    padding-top: 0;
   }
 }
