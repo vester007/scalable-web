@@ -4,5 +4,3 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
-
-<i class="fa-solid fa-xmark"></i>;
