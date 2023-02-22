@@ -181,7 +181,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2.5vh 2vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -227,9 +227,9 @@ a {
   display: inline-block;
   width: 100%;
 }
-@media (width >= 1024px) {
+@media (width <= 1024px) {
   .btn {
-    font-size: 1.5px;
+    font-size: 15px;
   }
 }
 
@@ -247,7 +247,7 @@ a {
   font-size: 2rem;
   min-width: 0.1px;
   outline: 0;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 2vw;
 }
 
 .input-group {
@@ -260,10 +260,10 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding-right: 1.5rem 2rem;
+  padding-right: 1.5rem;
 }
 .input-group .btn {
-  margin: 4px;
+  margin: 3px;
 }
 
 ::placeholder {
@@ -272,7 +272,7 @@ a {
 
 @media (width >= 1024px) {
   .input {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -359,7 +359,7 @@ a {
     font-size: 1.4rem;
   }
   .plan__price {
-    font: size 5rem;
+    font-size: 5rem;
   }
   .plan__billing-cycle {
     font-size: 1.6rem;
@@ -547,7 +547,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 
 .block__heading {
@@ -679,14 +678,15 @@ svg {
   border: 0;
   box-shadow: 0 0 30px 20px #e6ebee;
   margin: 4rem auto;
-  max-width: 700px;
+  max-width: 690px;
 }
 
 .block-domain__prices {
+  color: var(--colour-headings);
   display: grid;
   font-size: 2rem;
   font-weight: 600;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   margin: 0 auto;
